@@ -66,66 +66,70 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
                 {t("footer.description")}
               </p>
             </motion.div>
+
+            {/* Social Links */}
+            <div className="md:col-span-2 space-y-4">
+              <div className="">
+                <motion.h4
+                  className="text-lg font-semibold text-white"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  {t("footer.connect")}
+                </motion.h4>
+                <div className="mt-1 flex flex-wrap gap-3">
+                  {socialLinks.map((social, index) => (
+                    <motion.a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-gray-800 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110"
+                      initial={{ opacity: 0, scale: 0 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.3, delay: 0.2 + index * 0.1 }}
+                      viewport={{ once: true }}
+                      whileHover={{ y: -2 }}
+                      aria-label={social.label}
+                    >
+                      <social.icon className="w-5 h-5" />
+                    </motion.a>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
-            <motion.h4
-              className="text-lg font-semibold text-white"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              {t("footer.quickLinks")}
-            </motion.h4>
-            <nav className="flex flex-col space-y-3">
-              {quickLinks.map((link, index) => (
-                <motion.button
-                  key={link.id}
-                  onClick={() => scrollToSection(link.id)}
-                  className="text-gray-400 hover:text-blue-400 transition-colors text-left text-sm hover:translate-x-1 transition-transform duration-200"
-                  initial={{ opacity: 0, x: -10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: 0.1 + index * 0.05 }}
-                  viewport={{ once: true }}
-                  whileHover={{ x: 4 }}
-                >
-                  {link.label}
-                </motion.button>
-              ))}
-            </nav>
-          </div>
-
-          {/* Social Links */}
-          <div className="space-y-4">
-            <motion.h4
-              className="text-lg font-semibold text-white"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              {t("footer.connect")}
-            </motion.h4>
-            <div className="flex flex-wrap gap-3">
-              {socialLinks.map((social, index) => (
-                <motion.a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110"
-                  initial={{ opacity: 0, scale: 0 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.3, delay: 0.2 + index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -2 }}
-                  aria-label={social.label}
-                >
-                  <social.icon className="w-5 h-5" />
-                </motion.a>
-              ))}
+          <div className="md:col-span-2 space-y-4 md:justify-end md:flex">
+            <div>
+              <motion.h4
+                className="text-lg font-semibold text-white md:text-right"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
+                {t("footer.quickLinks")}
+              </motion.h4>
+              <nav className="inline-flex flex-col items-start space-y-3">
+                {quickLinks.map((link, index) => (
+                  <motion.button
+                    key={link.id}
+                    onClick={() => scrollToSection(link.id)}
+                    className="text-gray-400 hover:text-blue-400 transition-colors text-left md:text-right text-sm hover:translate-x-1 transition-transform duration-200"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.1 + index * 0.05 }}
+                    viewport={{ once: true }}
+                    whileHover={{ x: 4 }}
+                  >
+                    {link.label}
+                  </motion.button>
+                ))}
+              </nav>
             </div>
           </div>
         </div>
