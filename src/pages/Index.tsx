@@ -16,17 +16,31 @@ import AIChatbot from '../components/AIChatbot';
 import PerformanceOptimizer from '../components/PerformanceOptimizer';
 
 const Index = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved) return saved === 'dark';
+    } catch (e) {
+      // ignore (e.g., SSR)
+    }
+    return true; // default to dark
+  });
+
   const [activeSection, setActiveSection] = useState('home');
 
+  // Sync document class + localStorage whenever `isDarkMode` changes
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      setIsDarkMode(true);
+    if (isDarkMode) {
       document.documentElement.classList.add('dark');
+      try { localStorage.setItem('theme', 'dark'); } catch { }
+    } else {
+      document.documentElement.classList.remove('dark');
+      try { localStorage.setItem('theme', 'light'); } catch { }
     }
+  }, [isDarkMode]);
 
-    // Intersection Observer for active section tracking
+  // Intersection Observer for active section tracking
+  useEffect(() => {
     const observerOptions = {
       root: null,
       rootMargin: '-20% 0px -70% 0px',
@@ -42,7 +56,7 @@ const Index = () => {
     };
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
-    
+
     // Observe all sections
     const sections = document.querySelectorAll('section[id]');
     sections.forEach((section) => observer.observe(section));
@@ -53,14 +67,7 @@ const Index = () => {
   }, []);
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    if (!isDarkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
+    setIsDarkMode((prev) => !prev);
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -68,7 +75,7 @@ const Index = () => {
     if (element) {
       const headerHeight = 80; // Account for fixed header
       const elementPosition = element.offsetTop - headerHeight;
-      
+
       window.scrollTo({
         top: elementPosition,
         behavior: 'smooth'
@@ -80,13 +87,13 @@ const Index = () => {
   return (
     <LanguageProvider>
       <PerformanceOptimizer />
-      <motion.div 
+      <motion.div
         className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <Header 
+        <Header
           isDarkMode={isDarkMode}
           toggleDarkMode={toggleDarkMode}
           activeSection={activeSection}
