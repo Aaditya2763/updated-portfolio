@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 
 interface FooterProps {
@@ -13,22 +13,17 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/sidharth-demo",
+      href: "https://github.com/Aaditya2763/",
       label: "GitHub",
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/sidharth-demo",
+      href: "https://www.linkedin.com/in/adityasingh2763/",
       label: "LinkedIn",
     },
     {
-      icon: Twitter,
-      href: "https://twitter.com/sidharth_demo",
-      label: "Twitter",
-    },
-    {
       icon: Mail,
-      href: "mailto:sid240711@gmail.com",
+      href: "mailto:singhaditya2763@gmail.com",
       label: "Email",
     },
   ];
@@ -144,7 +139,7 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
-              <span>© {new Date().getFullYear()} Sidharth.</span>
+              <span>© {new Date().getFullYear()} Aditya Singh.</span>
               <span>{t("footer.rights")}</span>
             </div>
 

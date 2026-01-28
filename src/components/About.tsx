@@ -63,7 +63,7 @@ const About = () => {
             <div className="relative z-10">
               <LazyImage
                 src="/lovable-uploads/c45d782c-2e07-41b2-877f-69e24d79b8f8.png"
-                alt="Sidharth - Software Engineer"
+                alt="Aditya Singh - Software Developer"
                 className="w-full max-w-md mx-auto rounded-2xl shadow-2xl ring-4 ring-blue-500/20"
                 width={400}
                 height={500}
@@ -98,19 +98,18 @@ const About = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
-              <motion.button
-                onClick={() =>
-                  document
-                    .getElementById("cv")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+              <motion.a
+                href="/resume/Aditya%20resume.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-0 sm:px-6 py-3 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Download size={20} />
                 <span>{t("about.downloadResume")}</span>
-              </motion.button>
+              </motion.a>
               <motion.button
                 onClick={() =>
                   document
@@ -142,7 +141,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white dark:bg-gray-800 p-6 rounded-xl hover:shadow-xl transition-all duration-300 text-center group border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600"
+
               className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-xl hover:shadow-xl transition-all duration-300 text-center group border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-300/70 dark:hover:border-blue-600/70 hover:bg-white dark:hover:bg-gray-800"
               whileHover={{ y: -5, scale: 1.02 }}
             >
@@ -170,7 +169,7 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                1+
+                2.5+
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
                 {t("hero.stats.years")}
@@ -178,7 +177,7 @@ const About = () => {
             </div>
             <div>
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                3
+                15+
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
                 {t("hero.stats.projects")}
@@ -186,7 +185,7 @@ const About = () => {
             </div>
             <div>
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                3
+                2
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
                 Internships

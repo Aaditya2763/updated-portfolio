@@ -1,66 +1,40 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Download, User, Phone, Mail, MapPin, Calendar } from "lucide-react";
+import { Download, User, Phone, Mail, MapPin, Calendar, Star } from "lucide-react";
 
 const CV = () => {
-  const handleDownload = () => {
-    // Create a simple text-based resume for download
-    const resumeContent = `
-SIDHARTH - SOFTWARE ENGINEER
-Email: sid240711@gmail.com
-Phone: 9870220973
-Location: Vill. Bharthal, Dwarka Sec-26, South West Delhi 110077
+  // The resume PDF is served from the public folder at /resume/Aditya%20resume.pdf
+  // Clicking the Download Resume link should always load that PDF.
 
-OBJECTIVE
-As a BCA student passionate about technology, I am seeking opportunities to apply my learning in real-world projects while continuing to develop my skills in software development and quality assurance.
+  const techSkills = [
+    { name: "Java", rating: 4 },
+    { name: "JavaScript", rating: 4 },
+    { name: "React.js", rating: 4 },
+    { name: "React Native", rating: 3 },
+    { name: "HTML5", rating: 4 },
+    { name: "CSS3", rating: 4 },
+    { name: "Bootstrap", rating: 3 },
+    { name: "Node.js", rating: 4 },
+    { name: "Express.js", rating: 4 },
+    { name: "RESTful APIs", rating: 4 },
+    { name: "MongoDB", rating: 4 },
+    { name: "DynamoDB", rating: 3 },
+    { name: "JWT", rating: 4 },
+    { name: "Passport.js", rating: 3 },
+    { name: "AWS", rating: 3 },
+    { name: "Git", rating: 4 },
+    { name: "GitHub", rating: 4 },
+    { name: "Razorpay/cashfree", rating: 4 },
 
-EDUCATION
-Bachelor of Computer Applications (BCA)
-DPG Degree College, affiliated by MDU Rohtak, Haryana
-Currently Pursuing
+  ];
 
-12th Grade (CBSE) - 2022-2023 - Score: 85%
-10th Grade (Matric) (CBSE) - 2020-2021 - Score: 50%
+  const personalSkills = [
+    { name: "Public Speaking", rating: 4 },
+    { name: "Leadership", rating: 4 },
+    { name: "Problem Solving", rating: 5 },
+    { name: "Team Collaboration", rating: 4 },
 
-EXPERIENCE
-QA Testing Intern - Loqal.ai (June 2024 – August 2024)
-- Performing manual testing of web and mobile applications
-- Preparing detailed bug reports and collaborating with development team
-- Participating in test plan creation and quality assurance improvements
-
-Internshala Student Partner - Internshala (August 2024 - Dec 2024)
-- Represented Internshala in college, guiding students to find suitable courses and internships
-
-Frontend + Testing Intern - SingleInterface (June 2024 – August 2024)
-- Completed 1.5-month internship in web development as frontend tester
-- Gained valuable experience working with supportive team and mentors
-
-SKILLS
-Technical Skills:
-- Manual Testing & QA
-- HTML, CSS, JavaScript (Learning)
-- React Basics (Learning)
-- Microsoft Office Suite
-- Bug Reporting & Documentation
-
-Personal Skills & Languages:
-- Attention to Detail
-- Quick Learner
-- Team Collaboration
-- Hindi (Fluent)
-- English (Proficient)
-    `;
-
-    const blob = new Blob([resumeContent], { type: "text/plain" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "Sidharth_Resume.txt";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  };
+  ];
 
   return (
     <section
@@ -75,18 +49,21 @@ Personal Skills & Languages:
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">My Resume</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Aditya Singh — Resume</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-blue-600 mx-auto mb-6 rounded-full"></div>
 
-          <motion.button
-            onClick={handleDownload}
+          <motion.a
+            href="/resume/Aditya%20resume.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-blue-600 text-white px-6 py-3 rounded-lg hover:from-indigo-700 hover:to-blue-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
           >
             <Download size={20} />
             <span>Download Resume</span>
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         <div className="grid lg:grid-cols-1 gap-8">
@@ -98,12 +75,9 @@ Personal Skills & Languages:
             transition={{ duration: 0.6 }}
             className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700"
           >
-            <h3 className="text-2xl font-bold mb-4">Objective</h3>
+            <h3 className="text-2xl font-bold mb-4">Professional Summary</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              As a BCA student passionate about technology, I am seeking
-              opportunities to apply my learning in real-world projects while
-              continuing to develop my skills in software development and
-              quality assurance.
+              Software Developer with 2.5+ years of experience building scalable web and mobile applications. Experienced in MERN stack, React Native, payment integrations, and cloud services.
             </p>
           </motion.div>
         </div>
@@ -120,26 +94,22 @@ Personal Skills & Languages:
           <div className="space-y-6">
             <div className="border-l-4 border-indigo-600 pl-6 bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-r-lg">
               <h4 className="font-bold text-lg">
-                Bachelor of Computer Applications (BCA)
+                M.C.A.
               </h4>
               <p className="text-indigo-600 dark:text-indigo-400 font-medium">
-                DPG Degree College, affiliated by MDU Rohtak, Haryana
+                Maharshi Dayanand University
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Currently Pursuing
+                Year of Completion: 2026 | Score: 7.5
               </p>
             </div>
             <div className="border-l-4 border-purple-600 pl-6 bg-purple-50 dark:bg-purple-900/20 p-4 rounded-r-lg">
-              <h4 className="font-bold text-lg">12th Grade (CBSE)</h4>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                2022 - 2023 | Score: 85%
-              </p>
+              <h4 className="font-bold text-lg">Java & Full Stack Development</h4>
+              <p className="text-sm text-gray-600 dark:text-gray-400">Coding Blocks — Comprehensive training in Java and Full Stack development (projects and hands-on labs)</p>
             </div>
             <div className="border-l-4 border-green-600 pl-6 bg-green-50 dark:bg-green-900/20 p-4 rounded-r-lg">
-              <h4 className="font-bold text-lg">10th Grade (Matric) (CBSE)</h4>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                2020 - 2021 | Score: 50%
-              </p>
+              <h4 className="font-bold text-lg">Agentic AI & AWS</h4>
+              <p className="text-sm text-gray-600 dark:text-gray-400">Udemy — Completed courses on Agentic AI concepts and AWS cloud services</p>
             </div>
           </div>
         </motion.div>
@@ -155,59 +125,40 @@ Personal Skills & Languages:
           <h3 className="text-2xl font-bold mb-6">Experience</h3>
           <div className="space-y-6">
             <div className="border-l-4 border-red-600 pl-6 bg-red-50 dark:bg-red-900/20 p-4 rounded-r-lg">
-              <h4 className="font-bold text-lg">QA Testing Intern</h4>
+              <h4 className="font-bold text-lg">Software Developer</h4>
               <p className="text-red-600 dark:text-red-400 font-medium">
-                Loqal.ai
+                Alphaway Global Pvt. Limited
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                June 2024 – August 2024
+                June 2025 – Present
               </p>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                <li>
-                  Performing manual testing of web and mobile applications to
-                  identify bugs and ensure functionality, usability, and
-                  performance
-                </li>
-                <li>
-                  Preparing detailed bug reports and collaborating with the
-                  development team to resolve issues efficiently
-                </li>
-                <li>
-                  Participating in test plan creation and contributing to
-                  quality assurance process improvements
-                </li>
+                <li>Developed responsive, high-performance pages and booking workflows for a student-accommodation platform.</li>
+                <li>Built and integrated RESTful APIs and implemented secure client-side validation.</li>
+                <li>Designed and integrated a chatbot for real-time user assistance.</li>
               </ul>
             </div>
             <div className="border-l-4 border-purple-600 pl-6 bg-purple-50 dark:bg-purple-900/20 p-4 rounded-r-lg">
-              <h4 className="font-bold text-lg">Internshala Student Partner</h4>
+              <h4 className="font-bold text-lg">Full Stack Developer (MERN)</h4>
               <p className="text-purple-600 dark:text-purple-400 font-medium">
-                Internshala
+                National Marketing Project Inc.
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                August 2024 - Dec 2024
+                March 2024 – May 2025
               </p>
-              <p className="text-gray-600 dark:text-gray-300">
-                Represented Internshala in college, guiding students to find
-                suitable courses and internships.
-              </p>
+              <p className="text-gray-600 dark:text-gray-300">Designed, developed, and maintained production-ready web applications, integrated payment gateways (Razorpay, HDFC), and built RESTful APIs for scalable backend services.</p>
             </div>
             <div className="border-l-4 border-blue-600 pl-6 bg-blue-50 dark:bg-blue-900/20 p-4 rounded-r-lg">
-              <h4 className="font-bold text-lg">Frontend + Testing Intern</h4>
+              <h4 className="font-bold text-lg">Full Stack Developer</h4>
               <p className="text-blue-600 dark:text-blue-400 font-medium">
-                SingleInterface
+                Red Positive (OPC) Service Pvt. Limited
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                June 2024 – August 2024
+                Sept 2022 – Feb 2024
               </p>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                <li>
-                  Completed a 1.5-month internship in web development as a
-                  frontend tester
-                </li>
-                <li>
-                  Gained valuable experience working with a supportive team and
-                  mentors
-                </li>
+                <li>Led a small team to build React Native mobile apps and scalable Node.js backends.</li>
+                <li>Used AWS and DynamoDB for cloud-based data storage and performance optimization.</li>
               </ul>
             </div>
           </div>
@@ -224,28 +175,41 @@ Personal Skills & Languages:
           <h3 className="text-2xl font-bold mb-6">Skills</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">
-                Technical Skills
-              </h4>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>• Manual Testing & QA</li>
-                <li>• HTML, CSS, JavaScript (Learning)</li>
-                <li>• React Basics (Learning)</li>
-                <li>• Microsoft Office Suite</li>
-                <li>• Bug Reporting & Documentation</li>
-              </ul>
+              <h4 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">Technical Skills</h4>
+              <div className="grid grid-cols-2 gap-3 mt-2">
+                {techSkills.map((skill, i) => (
+                  <div key={i} className="p-3 rounded-lg border border-gray-200 dark:border-gray-600 text-sm font-medium text-gray-800 dark:text-gray-100 bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-900/10 dark:to-indigo-900/10 flex items-center justify-between">
+                    <span>{skill.name}</span>
+                    <div className="flex items-center space-x-1">
+                      <div className="flex -space-x-1">
+                        {Array.from({ length: 5 }).map((_, idx) => (
+                          <Star key={idx} size={14} className={idx < skill.rating ? "fill-amber-400 text-amber-400" : "text-gray-300 dark:text-gray-600"} />
+                        ))}
+                      </div>
+                      <span className="text-xs text-gray-500 dark:text-gray-400">{skill.rating}/5</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
+
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold text-purple-600 dark:text-purple-400">
-                Personal Skills & Languages
-              </h4>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>• Attention to Detail</li>
-                <li>• Quick Learner</li>
-                <li>• Team Collaboration</li>
-                <li>• Hindi (Fluent)</li>
-                <li>• English (Proficient)</li>
-              </ul>
+              <h4 className="text-lg font-semibold text-purple-600 dark:text-purple-400">Personal Skills & Languages</h4>
+              <div className="grid grid-cols-2 gap-3 mt-2">
+                {personalSkills.map((skill, i) => (
+                  <div key={i} className="p-3 rounded-lg border border-gray-200 dark:border-gray-600 text-sm font-medium text-gray-800 dark:text-gray-100 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/10 dark:to-blue-900/10 flex items-center justify-between">
+                    <span>{skill.name}</span>
+                    <div className="flex items-center space-x-1">
+                      <div className="flex -space-x-1">
+                        {Array.from({ length: 5 }).map((_, idx) => (
+                          <Star key={idx} size={14} className={idx < skill.rating ? "fill-amber-400 text-amber-400" : "text-gray-300 dark:text-gray-600"} />
+                        ))}
+                      </div>
+                      <span className="text-xs text-gray-500 dark:text-gray-400">{skill.rating}/5</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </motion.div>
@@ -260,62 +224,19 @@ Personal Skills & Languages:
         >
           <h3 className="text-2xl font-bold mb-6">Achievements & Awards</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <div className="p-3 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg border border-blue-200 dark:border-blue-700">
-                <p className="text-sm font-medium">
-                  Certificate of Competition of Internship in SingleInterface
-                </p>
+            <div className="space-y-3">
+              <div className="p-3 bg-gradient-to-r from-grey-50 to-grey-100 dark:from-grey-900/10 dark:to-grey-900/20 rounded-lg border border-grey-200 dark:border-grey-700">
+                <p className="text-sm font-medium">Udemy Certificate — Full Stack Web Development</p>
               </div>
-              <div className="p-3 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-lg border border-purple-200 dark:border-purple-700">
-                <p className="text-sm font-medium">
-                  Certificate of Participation in Internshala Student Partner
-                </p>
+              <div className="p-3 bg-gradient-to-r from-yellow-50 to-yellow-100 dark:from-yellow-900/10 dark:to-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-700">
+                <p className="text-sm font-medium">Udemy Certificate — AWS (Cloud Services)</p>
               </div>
-              <div className="p-3 bg-white dark:bg-gray-700 rounded-lg">
-                <p className="text-sm font-medium">
-                  Micro Internship in Digital Marketing (IBM Skill Build)
-                </p>
+              <div className="p-3 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/10 dark:to-blue-900/10 rounded-lg border border-green-200 dark:border-green-700">
+                <p className="text-sm font-medium">Employee of the Year — Alphaway Global Pvt. Limited</p>
               </div>
-              <div className="p-3 bg-white dark:bg-gray-700 rounded-lg">
-                <p className="text-sm font-medium">
-                  Digital Marketing in 11 Hours Tutorial for Beginners
-                  Certificate
-                </p>
-              </div>
-              <div className="p-3 bg-white dark:bg-gray-700 rounded-lg">
-                <p className="text-sm font-medium">
-                  ISP Internshala Student Partner 44 Webinar Certificate
-                </p>
-              </div>
+
             </div>
-            <div className="space-y-2">
-              <div className="p-3 bg-white dark:bg-gray-700 rounded-lg">
-                <p className="text-sm font-medium">
-                  Certificate of Participation - Value Added Course (Spreadsheet
-                  Management)
-                </p>
-              </div>
-              <div className="p-3 bg-white dark:bg-gray-700 rounded-lg">
-                <p className="text-sm font-medium">
-                  Start-up MahaKhumb Visitor Certificate
-                </p>
-              </div>
-              <div className="p-3 bg-white dark:bg-gray-700 rounded-lg">
-                <p className="text-sm font-medium">
-                  Certificate of Participation in Nukkad Natak (Eco Holi)
-                </p>
-              </div>
-              <div className="p-3 bg-white dark:bg-gray-700 rounded-lg">
-                <p className="text-sm font-medium">
-                  Certificate For Leadership and 2nd Position in PPT Competition
-                </p>
-              </div>
-              <div className="p-3 bg-white dark:bg-gray-700 rounded-lg">
-                <p className="text-sm font-medium">
-                  Certificate of Participation in Nukkad Natak
-                </p>
-              </div>
-            </div>
+
           </div>
         </motion.div>
       </div>

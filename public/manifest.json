@@ -1,7 +1,7 @@
 {
-  "name": "Sidharth - Aspiring Software Developer",
-  "short_name": "Sidharth Portfolio",
-  "description": "Portfolio of Sidharth - BCA Student and Aspiring Software Developer",
+  "name": "Aditya Singh - Software Developer",
+  "short_name": "Aditya Portfolio",
+  "description": "Portfolio of Aditya Singh - Software Developer (MERN, React Native)",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -21,7 +21,11 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["portfolio", "education", "technology"],
+  "categories": [
+    "portfolio",
+    "education",
+    "technology"
+  ],
   "lang": "en",
   "dir": "ltr"
 }

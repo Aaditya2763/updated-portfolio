@@ -65,39 +65,39 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.cv': 'CV',
     'nav.faq': 'FAQ',
     'nav.contact': 'Contact',
-    
+
     // Hero Section
     'hero.greeting': 'Hi, I\'m',
-    'hero.name': 'Sidharth',
-    'hero.tagline1': 'Aspiring Software Developer',
-    'hero.tagline2': 'BCA Student & Tech Enthusiast',
-    'hero.tagline3': 'Learning Full-Stack Development',
-    'hero.tagline4': 'Quality Assurance Specialist',
-    'hero.description': 'Currently pursuing BCA while gaining hands-on experience in web development, testing, and modern technologies. Passionate about learning and building practical solutions.',
+    'hero.name': 'Aditya Singh',
+    'hero.tagline1': 'Software Developer (Full-Stack)',
+    'hero.tagline2': 'MERN & React Native Specialist',
+    'hero.tagline3': 'Cloud & Performance Focused',
+    'hero.tagline4': 'Payment & API Integrations',
+    'hero.description': 'Software Developer with 2.5+ years of experience building scalable web and mobile applications. Strong with React,Next.js React Native, Node.js, Express, MongoDB, and payment gateway integrations,AWS.',
     'hero.viewWork': 'View My Work',
     'hero.getInTouch': 'Get In Touch',
     'hero.scrollExplore': 'Scroll to explore',
-    'hero.stats.years': 'Years Learning',
-    'hero.stats.projects': 'Learning Projects',
+    'hero.stats.years': 'Years Experince',
+    'hero.stats.projects': 'Projects',
     'hero.stats.dedicated': 'Committed to Growth',
-    
+
     // About Section
     'about.title': 'About Me',
     'about.subtitle': 'A dedicated student on a journey to become a skilled software developer',
-    'about.description1': 'I\'m currently pursuing my Bachelor\'s in Computer Applications from DPG Degree College, Haryana. Through internships and self-directed learning, I\'m building practical experience in web development and quality assurance.',
-    'about.description2': 'My journey includes hands-on experience in manual testing at SingleInterface and Loqal.ai, along with serving as an Internshala Student Partner. I\'m actively learning modern web technologies and development practices.',
-    'about.description3': 'I believe in continuous learning and practical application. Every project and internship teaches me something new, and I\'m committed to growing into a skilled developer who can contribute meaningfully to tech teams.',
+    'about.description1': 'I am a Software Developer with 2.5+ years of professional experience specializing in Full Stack (MERN) and modern JavaScript frameworks.',
+    'about.description2': 'I have hands-on experience in building scalable web and mobile applications, integrating secure authentication, payment gateways, and RESTful APIs.',
+    'about.description3': 'I enjoy solving real-world problems, optimizing performance, and delivering production-ready solutions while collaborating effectively with cross-functional teams.I am currently pursuing my MCA and continuously upskilling in modern web technologies and AI-driven solutions.',
     'about.downloadResume': 'Download Resume',
     'about.viewProjects': 'View Projects',
-    'about.highlights.education': 'Education',
-    'about.highlights.education.desc': 'Pursuing BCA (Current)',
     'about.highlights.experience': 'Experience',
-    'about.highlights.experience.desc': 'QA Testing & Learning Development',
+    'about.highlights.experience.desc': 'Software Developer (Full-Stack ) & Cloud',
+    'about.highlights.education': 'Education',
+    'about.highlights.education.desc': 'M.C.A. (In progress) - Maharshi Dayanand University',
     'about.highlights.leadership': 'Leadership',
-    'about.highlights.leadership.desc': 'Internshala Student Partner',
+    'about.highlights.leadership.desc': 'Led interns and collaborated with cross-functional teams',
     'about.highlights.expertise': 'Expertise',
-    'about.highlights.expertise.desc': 'Manual Testing & Web Basics',
-    
+    'about.highlights.expertise.desc': 'React.js, Next.js, Node.js, MongoDB, Payments',
+
     // Projects Section
     'projects.title': 'Featured Projects',
     'projects.subtitle': 'Here are some of my recent projects that showcase my skills in modern web development.',
@@ -106,7 +106,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.viewLiveDemo': 'View Live Demo',
     'projects.viewSourceCode': 'View Source Code',
     'projects.techUsed': 'Technologies Used',
-    
+
     // Contact Section
     'contact.title': 'Get In Touch',
     'contact.subtitle': 'I\'m always interested in new opportunities and exciting projects. Let\'s build something amazing together!',
@@ -127,18 +127,18 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.form.error': 'Sorry, there was an error sending your message. Please try again or email me directly.',
     'contact.form.required': 'required',
     'contact.form.agreement': 'By sending this message, you agree that I may contact you regarding your inquiry.',
-    
+
     // Footer
-    'footer.brand': 'Sidharth.dev',
-    'footer.description': 'Learning to build the future, one line of code at a time. A dedicated student passionate about technology and continuous growth.',
+    'footer.brand': 'AdityaSingh.dev',
+    'footer.description': 'Software Developer building web & mobile apps. Focused on scalable, secure, production-ready solutions.',
     'footer.quickLinks': 'Quick Links',
     'footer.connect': 'Connect',
     'footer.madeWith': 'Made with',
-    'footer.using': 'using React & Tailwind CSS',
+    'footer.using': 'by Aditya Singh',
     'footer.rights': 'All rights reserved.',
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Service',
-    
+
     // Language names
     'lang.en': 'English',
     'lang.es': 'Español',
@@ -155,10 +155,10 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.cv': 'CV',
     'nav.faq': 'FAQ',
     'nav.contact': 'Contacto',
-    
+
     // Hero Section
     'hero.greeting': 'Hola, soy',
-    'hero.name': 'Sidharth',
+    'hero.name': 'Aditya Singh',
     'hero.tagline1': 'Ingeniero de Software con Integración de IA',
     'hero.tagline2': 'Solucionador de Problemas',
     'hero.tagline3': 'Entusiasta de la Tecnología',
@@ -170,7 +170,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.stats.years': 'Años Aprendiendo',
     'hero.stats.projects': 'Proyectos',
     'hero.stats.dedicated': 'Dedicado',
-    
+
     // About Section
     'about.title': 'Acerca de Mí',
     'about.subtitle': 'Apasionado por crear soluciones innovadoras a través de la tecnología',
@@ -187,7 +187,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.highlights.leadership.desc': 'Socio Estudiantil de Internshala',
     'about.highlights.expertise': 'Experiencia',
     'about.highlights.expertise.desc': 'Desarrollo Full-Stack',
-    
+
     // Projects Section
     'projects.title': 'Proyectos Destacados',
     'projects.subtitle': 'Aquí están algunos de mis proyectos recientes que muestran mis habilidades en desarrollo web moderno.',
@@ -196,7 +196,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.viewLiveDemo': 'Ver Demo en Vivo',
     'projects.viewSourceCode': 'Ver Código Fuente',
     'projects.techUsed': 'Tecnologías Utilizadas',
-    
+
     // Contact Section
     'contact.title': 'Ponte en Contacto',
     'contact.subtitle': '¡Siempre estoy interesado en nuevas oportunidades y proyectos emocionantes. Construyamos algo increíble juntos!',
@@ -217,9 +217,9 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.form.error': 'Lo siento, hubo un error al enviar tu mensaje. Por favor intenta de nuevo o envíame un correo directamente.',
     'contact.form.required': 'requerido',
     'contact.form.agreement': 'Al enviar este mensaje, aceptas que puedo contactarte con respecto a tu consulta.',
-    
+
     // Footer
-    'footer.brand': 'Sidharth.dev',
+    'footer.brand': 'AdityaSingh.dev',
     'footer.description': 'Construyendo el futuro, una línea de código a la vez. Apasionado por crear soluciones web innovadoras que marcan la diferencia.',
     'footer.quickLinks': 'Enlaces Rápidos',
     'footer.connect': 'Conectar',
@@ -228,7 +228,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.rights': 'Todos los derechos reservados.',
     'footer.privacy': 'Política de Privacidad',
     'footer.terms': 'Términos de Servicio',
-    
+
     // Language names
     'lang.en': 'English',
     'lang.es': 'Español',
@@ -245,10 +245,10 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.cv': 'CV',
     'nav.faq': 'FAQ',
     'nav.contact': 'Contact',
-    
+
     // Hero Section
     'hero.greeting': 'Salut, je suis',
-    'hero.name': 'Sidharth',
+    'hero.name': 'Aditya Singh',
     'hero.tagline1': 'Ingénieur Logiciel avec Intégration IA',
     'hero.tagline2': 'Résolveur de Problèmes',
     'hero.tagline3': 'Passionné de Technologie',
@@ -260,7 +260,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.stats.years': 'Années d\'Apprentissage',
     'hero.stats.projects': 'Projets',
     'hero.stats.dedicated': 'Dévoué',
-    
+
     // About Section
     'about.title': 'À Propos de Moi',
     'about.subtitle': 'Passionné par la création de solutions innovantes grâce à la technologie',
@@ -277,7 +277,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.highlights.leadership.desc': 'Partenaire Étudiant Internshala',
     'about.highlights.expertise': 'Expertise',
     'about.highlights.expertise.desc': 'Développement Full-Stack',
-    
+
     // Projects Section
     'projects.title': 'Projets en Vedette',
     'projects.subtitle': 'Voici quelques-uns de mes projets récents qui montrent mes compétences en développement web moderne.',
@@ -286,7 +286,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.viewLiveDemo': 'Voir Démo en Direct',
     'projects.viewSourceCode': 'Voir Code Source',
     'projects.techUsed': 'Technologies Utilisées',
-    
+
     // Contact Section
     'contact.title': 'Entrer en Contact',
     'contact.subtitle': 'Je suis toujours intéressé par de nouvelles opportunités et des projets passionnants. Construisons quelque chose d\'incroyable ensemble !',
@@ -307,9 +307,9 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.form.error': 'Désolé, il y a eu une erreur lors de l\'envoi de votre message. Veuillez réessayer ou m\'envoyer un email directement.',
     'contact.form.required': 'requis',
     'contact.form.agreement': 'En envoyant ce message, vous acceptez que je puisse vous contacter concernant votre demande.',
-    
+
     // Footer
-    'footer.brand': 'Sidharth.dev',
+    'footer.brand': 'AdityaSingh.dev',
     'footer.description': 'Construire l\'avenir, une ligne de code à la fois. Passionné par la création de solutions web innovantes qui font la différence.',
     'footer.quickLinks': 'Liens Rapides',
     'footer.connect': 'Se Connecter',
@@ -318,7 +318,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.rights': 'Tous droits réservés.',
     'footer.privacy': 'Politique de Confidentialité',
     'footer.terms': 'Conditions de Service',
-    
+
     // Language names
     'lang.en': 'English',
     'lang.es': 'Español',
@@ -335,10 +335,10 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.cv': 'Lebenslauf',
     'nav.faq': 'FAQ',
     'nav.contact': 'Kontakt',
-    
+
     // Hero Section
     'hero.greeting': 'Hallo, ich bin',
-    'hero.name': 'Sidharth',
+    'hero.name': 'Aditya Singh',
     'hero.tagline1': 'Software-Ingenieur mit KI-Integration',
     'hero.tagline2': 'Problemlöser',
     'hero.tagline3': 'Technologie-Enthusiast',
@@ -350,7 +350,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.stats.years': 'Jahre Lernen',
     'hero.stats.projects': 'Projekte',
     'hero.stats.dedicated': 'Engagiert',
-    
+
     // About Section
     'about.title': 'Über Mich',
     'about.subtitle': 'Leidenschaftlich daran interessiert, innovative Lösungen durch Technologie zu schaffen',
@@ -367,7 +367,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.highlights.leadership.desc': 'Internshala Student Partner',
     'about.highlights.expertise': 'Expertise',
     'about.highlights.expertise.desc': 'Full-Stack-Entwicklung',
-    
+
     // Projects Section
     'projects.title': 'Ausgewählte Projekte',
     'projects.subtitle': 'Hier sind einige meiner neuesten Projekte, die meine Fähigkeiten in der modernen Webentwicklung zeigen.',
@@ -376,7 +376,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.viewLiveDemo': 'Live-Demo Ansehen',
     'projects.viewSourceCode': 'Quellcode Ansehen',
     'projects.techUsed': 'Verwendete Technologien',
-    
+
     // Contact Section
     'contact.title': 'Kontakt Aufnehmen',
     'contact.subtitle': 'Ich bin immer an neuen Möglichkeiten und spannenden Projekten interessiert. Lassen Sie uns gemeinsam etwas Erstaunliches schaffen!',
@@ -397,9 +397,9 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.form.error': 'Entschuldigung, beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder senden Sie mir direkt eine E-Mail.',
     'contact.form.required': 'erforderlich',
     'contact.form.agreement': 'Durch das Senden dieser Nachricht stimmen Sie zu, dass ich Sie bezüglich Ihrer Anfrage kontaktieren darf.',
-    
+
     // Footer
-    'footer.brand': 'Sidharth.dev',
+    'footer.brand': 'AdityaSingh.dev',
     'footer.description': 'Die Zukunft bauen, eine Codezeile nach der anderen. Leidenschaftlich daran interessiert, innovative Web-Lösungen zu schaffen, die einen Unterschied machen.',
     'footer.quickLinks': 'Schnelle Links',
     'footer.connect': 'Verbinden',
@@ -408,7 +408,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.rights': 'Alle Rechte vorbehalten.',
     'footer.privacy': 'Datenschutzrichtlinie',
     'footer.terms': 'Nutzungsbedingungen',
-    
+
     // Language names
     'lang.en': 'English',
     'lang.es': 'Español',
@@ -425,10 +425,10 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.cv': 'सीवी',
     'nav.faq': 'FAQ',
     'nav.contact': 'संपर्क',
-    
+
     // Hero Section
     'hero.greeting': 'नमस्ते, मैं हूँ',
-    'hero.name': 'सिद्धार्थ',
+    'hero.name': 'आदित्य सिंह',
     'hero.tagline1': 'AI इंटीग्रेशन के साथ सॉफ्टवेयर इंजीनियर',
     'hero.tagline2': 'समस्या समाधानकर्ता',
     'hero.tagline3': 'तकनीक उत्साही',
@@ -440,7 +440,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.stats.years': 'साल सीखना',
     'hero.stats.projects': 'प्रोजेक्ट्स',
     'hero.stats.dedicated': 'समर्पित',
-    
+
     // About Section
     'about.title': 'मेरे बारे में',
     'about.subtitle': 'तकनीक के माध्यम से नवाचार समाधान बनाने के लिए उत्साहित',
@@ -457,7 +457,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.highlights.leadership.desc': 'Internshala Student Partner',
     'about.highlights.expertise': 'विशेषज्ञता',
     'about.highlights.expertise.desc': 'फुल-स्टैक डेवलपमेंट',
-    
+
     // Projects Section
     'projects.title': 'चुनिंदा प्रोजेक्ट्स',
     'projects.subtitle': 'यहाँ मेरे कुछ हाल के प्रोजेक्ट्स हैं जो आधुनिक वेब डेवलपमेंट में मेरे कौशल को प्रदर्शित करते हैं।',
@@ -466,7 +466,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.viewLiveDemo': 'लाइव डेमो देखें',
     'projects.viewSourceCode': 'सोर्स कोड देखें',
     'projects.techUsed': 'उपयोग की गई तकनीकें',
-    
+
     // Contact Section
     'contact.title': 'संपर्क में रहें',
     'contact.subtitle': 'मैं हमेशा नए अवसरों और रोमांचक प्रोजेक्ट्स में रुचि रखता हूँ। आइए मिलकर कुछ अद्भुत बनाते हैं!',
@@ -487,9 +487,9 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.form.error': 'खुशी, आपका संदेश भेजने में त्रुटि हुई। कृपया फिर से कोशिश करें या मुझे सीधे ईमेल करें।',
     'contact.form.required': 'आवश्यक',
     'contact.form.agreement': 'इस संदेश को भेजकर, आप सहमत हैं कि मैं आपकी पूछताछ के संबंध में आपसे संपर्क कर सकता हूँ।',
-    
+
     // Footer
-    'footer.brand': 'Sidharth.dev',
+    'footer.brand': 'AdityaSingh.dev',
     'footer.description': 'भविष्य का निर्माण, एक समय में एक कोड लाइन। नवाचार वेब समाधान बनाने के लिए उत्साहित जो अंतर बनाते हैं।',
     'footer.quickLinks': 'त्वरित लिंक',
     'footer.connect': 'जुड़ें',
@@ -498,7 +498,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.rights': 'सभी अधिकार सुरक्षित।',
     'footer.privacy': 'गोपनीयता नीति',
     'footer.terms': 'सेवा की शर्तें',
-    
+
     // Language names
     'lang.en': 'English',
     'lang.es': 'Español',
@@ -515,10 +515,10 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.cv': '简历',
     'nav.faq': '常见问题',
     'nav.contact': '联系',
-    
+
     // Hero Section
     'hero.greeting': '你好，我是',
-    'hero.name': 'Sidharth',
+    'hero.name': 'Aditya Singh',
     'hero.tagline1': '具有AI集成的软件工程师',
     'hero.tagline2': '问题解决者',
     'hero.tagline3': '技术爱好者',
@@ -530,7 +530,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.stats.years': '年学习',
     'hero.stats.projects': '项目',
     'hero.stats.dedicated': '专注',
-    
+
     // About Section
     'about.title': '关于我',
     'about.subtitle': '热衷于通过技术创造创新解决方案',
@@ -547,7 +547,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.highlights.leadership.desc': 'Internshala学生合作伙伴',
     'about.highlights.expertise': '专业知识',
     'about.highlights.expertise.desc': '全栈开发',
-    
+
     // Projects Section
     'projects.title': '精选项目',
     'projects.subtitle': '这里是我最近的一些项目，展示了我在现代网络开发方面的技能。',
@@ -556,7 +556,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.viewLiveDemo': '查看在线演示',
     'projects.viewSourceCode': '查看源代码',
     'projects.techUsed': '使用的技术',
-    
+
     // Contact Section
     'contact.title': '联系我',
     'contact.subtitle': '我总是对新机会和令人兴奋的项目感兴趣。让我们一起创造一些令人惊叹的东西！',
@@ -577,9 +577,9 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.form.error': '抱歉，发送您的消息时出现错误。请重试或直接给我发邮件。',
     'contact.form.required': '必填',
     'contact.form.agreement': '通过发送此消息，您同意我可以就您的询问与您联系。',
-    
+
     // Footer
-    'footer.brand': 'Sidharth.dev',
+    'footer.brand': 'AdityaSingh.dev',
     'footer.description': '构建未来，一次一行代码。热衷于创造有影响力的创新网络解决方案。',
     'footer.quickLinks': '快速链接',
     'footer.connect': '连接',
@@ -588,7 +588,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.rights': '版权所有。',
     'footer.privacy': '隐私政策',
     'footer.terms': '服务条款',
-    
+
     // Language names
     'lang.en': 'English',
     'lang.es': 'Español',

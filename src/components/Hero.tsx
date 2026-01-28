@@ -11,7 +11,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
   const { t } = useLanguage();
   const vantaRef = useRef<HTMLDivElement>(null);
   const vantaEffect = useRef<any>(null);
-  
+
   const taglines = [
     t('hero.tagline1'),
     t('hero.tagline2'),
@@ -106,14 +106,14 @@ const Hero = ({ scrollToSection }: HeroProps) => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 bg-gradient-to-br from-blue-50/50 via-white to-purple-50/50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900/20">
       {/* Vanta.js Topology Background */}
-      <div 
+      <div
         ref={vantaRef}
         className="absolute inset-0 opacity-30 dark:opacity-50"
       />
-      
+
       {/* Minimal overlay to maintain text readability */}
       <div className="absolute inset-0 bg-white/20 dark:bg-black/20" />
-      
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -146,7 +146,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
       </div>
 
       <div className="relative z-10 text-center text-foreground px-4 max-w-4xl mx-auto">
-        <motion.h1 
+        <motion.h1
           className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
         </motion.h1>
 
         {/* Dynamic Tagline */}
-        <motion.div 
+        <motion.div
           className="text-2xl md:text-3xl mb-4 h-12 flex items-center justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -177,7 +177,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
           </motion.span>
         </motion.div>
 
-        <motion.p 
+        <motion.p
           className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-muted-foreground"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -187,18 +187,18 @@ const Hero = ({ scrollToSection }: HeroProps) => {
         </motion.p>
 
         {/* Enhanced Stats Row */}
-        <motion.div 
+        <motion.div
           className="flex flex-wrap justify-center gap-8 mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.0, duration: 0.8 }}
         >
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">2+</div>
+            <div className="text-3xl font-bold text-primary">2.5+</div>
             <div className="text-sm text-muted-foreground">{t('hero.stats.years')}</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">5+</div>
+            <div className="text-3xl font-bold text-primary">15+</div>
             <div className="text-sm text-muted-foreground">{t('hero.stats.projects')}</div>
           </div>
           <div className="text-center">
@@ -206,8 +206,8 @@ const Hero = ({ scrollToSection }: HeroProps) => {
             <div className="text-sm text-muted-foreground">{t('hero.stats.dedicated')}</div>
           </div>
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -224,7 +224,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
               </span>
             </span>
           </button>
-          
+
           <button
             onClick={() => scrollToSection('contact')}
             className="group border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-105 hover:-translate-y-0.5"
@@ -234,7 +234,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
         </motion.div>
 
         {/* Enhanced Scroll Indicator */}
-        <motion.div 
+        <motion.div
           className="flex flex-col items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

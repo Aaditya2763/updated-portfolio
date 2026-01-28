@@ -7,29 +7,29 @@ import LazyImage from './LazyImage';
 const testimonials = [
   {
     id: 1,
-    name: "Mentor at SingleInterface",
+    name: "Sabeel Khan",
     role: "Senior Developer",
-    company: "SingleInterface",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80",
-    content: "Sidharth showed great enthusiasm during his internship. His attention to detail in testing and willingness to learn made him a valuable team member.",
+    company: "PayU India",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQF73eVBY0rQ9g/profile-displayphoto-scale_400_400/B56ZqVcApMJoAg-/0/1763443742803?e=1771459200&v=beta&t=3PJwTzI42-hNfN6eyKM9-vljG5DbWiuwAzWRbsIP4AQ",
+    content: "Aditya showed great enthusiasm during his internship. His attention to detail in testing and willingness to learn made him a valuable team member.",
     rating: 5
   },
   {
     id: 2,
-    name: "College Professor",
-    role: "Computer Science Faculty",
-    company: "DPG Degree College",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b9e0d83a?auto=format&fit=crop&w=150&q=80",
-    content: "Sidharth is one of our most dedicated students. His practical approach to learning and consistent effort in projects sets him apart from his peers.",
+    name: "Ashutosh Payasi ",
+    role: "Senior Software Engineer",
+    company: "Alphaway Global Pvt. Limited",
+    image: "https://site-images.ams3.cdn.digitaloceanspaces.com/images/bg-images/employee-images/teamimg.png",
+    content: "Aditya is one of our most dedicated students. His practical approach to learning and consistent effort in projects sets him apart from his peers.",
     rating: 5
   },
   {
     id: 3,
-    name: "Fellow Student",
-    role: "BCA Student",
-    company: "Study Group",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80",
-    content: "Sidharth has been incredibly helpful as an Internshala Student Partner. His guidance helped me find the right internship opportunity for my career goals.",
+    name: "Maitry Upreti",
+    role: "Founder & CEO",
+    company: "Alphaway Global Pvt. Limited",
+    image: "https://site-images.ams3.cdn.digitaloceanspaces.com/images/bg-images/employee-images/WhatsApp%20Image%202025-11-20%20at%202.09.25%20PM.jpeg",
+    content: "Aditya consistently delivered high-performance, user-friendly features and owned complex UI and API integrations. He improved user engagement with solutions like a custom chatbot and showed strong problem-solving and communication. I highly recommend him for frontend or Software developer roles.",
     rating: 5
   }
 ];
@@ -45,7 +45,7 @@ const Testimonials = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">What Clients Say</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Testimonials</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mb-4 rounded-full"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Don't just take my word for it. Here's what clients and collaborators have to say about working with me.
@@ -65,7 +65,7 @@ const Testimonials = () => {
               <div className="absolute top-6 right-6 text-purple-600 dark:text-purple-400 opacity-20">
                 <Quote size={40} />
               </div>
-              
+
               <div className="mb-6">
                 <div className="flex space-x-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (

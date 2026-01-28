@@ -31,13 +31,13 @@ const FloatingCTA = ({ scrollToSection }: FloatingCTAProps) => {
     {
       icon: Phone,
       label: 'Call',
-      action: () => window.location.href = 'tel:9870220973',
+      action: () => window.location.href = 'tel:9467665000',
       color: 'bg-green-600 hover:bg-green-700'
     },
     {
       icon: Mail,
       label: 'Email',
-      action: () => window.location.href = 'mailto:sid240711@gmail.com',
+      action: () => window.location.href = 'mailto:singhaditya2763@gmail.com',
       color: 'bg-purple-600 hover:bg-purple-700'
     }
   ];
@@ -81,9 +81,8 @@ const FloatingCTA = ({ scrollToSection }: FloatingCTAProps) => {
 
           <motion.button
             onClick={() => setIsOpen(!isOpen)}
-            className={`w-14 h-14 rounded-full shadow-lg flex items-center justify-center text-white transition-all duration-200 ${
-              isOpen ? 'bg-red-600 hover:bg-red-700' : 'bg-blue-600 hover:bg-blue-700'
-            }`}
+            className={`w-14 h-14 rounded-full shadow-lg flex items-center justify-center text-white transition-all duration-200 ${isOpen ? 'bg-red-600 hover:bg-red-700' : 'bg-blue-600 hover:bg-blue-700'
+              }`}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             animate={{ rotate: isOpen ? 45 : 0 }}

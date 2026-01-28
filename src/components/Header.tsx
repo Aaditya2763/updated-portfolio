@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Home, User, Folder, Mail, FileText, 
+import {
+  Home, User, Folder, Mail, FileText,
   HelpCircle, Sun, Moon, Menu, X as CloseIcon
 } from 'lucide-react';
 import LanguageSwitch from './LanguageSwitch';
@@ -42,36 +42,34 @@ const Header = ({ isDarkMode, toggleDarkMode, activeSection, scrollToSection }: 
   };
 
   return (
-    <motion.header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-gray-200/50 dark:border-gray-700/50' 
+    <motion.header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-gray-200/50 dark:border-gray-700/50'
           : 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm'
-      }`}
+        }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
         <div className="flex justify-between items-center h-16">
-          <motion.div 
+          <motion.div
             className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-indigo-600 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
           >
-            Sidharth.dev
+            AdityaSingh.dev
           </motion.div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navigationItems.map(({ id, label, icon: Icon }) => (
               <motion.button
                 key={id}
                 onClick={() => handleScrollToSection(id)}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 ${
-                  activeSection === id 
-                    ? 'bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 text-blue-600 dark:text-blue-400 shadow-sm border border-blue-200/50 dark:border-blue-700/50' 
+                className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 ${activeSection === id
+                    ? 'bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 text-blue-600 dark:text-blue-400 shadow-sm border border-blue-200/50 dark:border-blue-700/50'
                     : 'hover:bg-gradient-to-r hover:from-gray-50 hover:to-blue-50/50 dark:hover:from-gray-800/50 dark:hover:to-blue-900/10 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'
-                }`}
+                  }`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 aria-current={activeSection === id ? 'page' : undefined}
@@ -85,7 +83,7 @@ const Header = ({ isDarkMode, toggleDarkMode, activeSection, scrollToSection }: 
           <div className="flex items-center space-x-3">
             {/* Language Switch */}
             <LanguageSwitch />
-            
+
             {/* Dark Mode Toggle */}
             <motion.button
               onClick={toggleDarkMode}
@@ -102,7 +100,7 @@ const Header = ({ isDarkMode, toggleDarkMode, activeSection, scrollToSection }: 
                 {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
               </motion.div>
             </motion.button>
-            
+
             {/* Mobile Menu Toggle */}
             <motion.button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

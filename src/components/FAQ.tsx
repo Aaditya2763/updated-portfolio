@@ -8,19 +8,19 @@ const FAQ = () => {
   const faqItems = [
     {
       question: "What is your current level of experience?",
-      answer: "I'm currently a BCA student with hands-on experience in manual testing through internships at SingleInterface and Loqal.ai. I'm actively learning web development technologies including HTML, CSS, JavaScript, and React."
+      answer: "I'm a Software Developer with 2+ years of professional experience. I currently work at Alphaway Global Pvt. Limited (June 2025 – Present) and have prior full-stack experience building e‑commerce and mobile apps using the MERN stack and React Native."
     },
     {
       question: "What kind of opportunities are you looking for?",
-      answer: "I'm seeking entry-level positions, internships, or junior developer roles where I can apply my learning while continuing to grow. I'm particularly interested in QA testing roles and frontend development opportunities."
+      answer: "I'm looking for Full Stack or Backend roles where I can apply Node.js, Express, MongoDB, and React skills — roles that involve building scalable web applications, API design, and cloud integrations. I'm also open to senior/junior developer positions depending on fit."
     },
     {
       question: "Are you available for freelance or part-time work?",
-      answer: "Yes, I'm open to part-time opportunities and small projects that align with my current skill level. This helps me gain practical experience while completing my studies."
+      answer: "Yes — I'm open to freelance, contract, or part-time projects that align with my expertise (web apps, APIs, payment integration). For full-time opportunities I'm available to discuss start dates and notice periods."
     },
     {
       question: "How do you stay updated with technology trends?",
-      answer: "I actively follow tech blogs, participate in online coding communities, work on personal projects, and take online courses. My role as an Internshala Student Partner also keeps me connected with industry trends."
+      answer: "I take online courses (Udemy), contribute to personal projects, and follow industry blogs. I also have hands-on experience from working on production projects and teaching/mentoring roles which help me stay current."
     }
   ];
 
@@ -37,7 +37,7 @@ const FAQ = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Frequently Asked Questions</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full"></div>
         </motion.div>
-        
+
         <div className="space-y-4">
           {faqItems.map((item, index) => (
             <motion.div
