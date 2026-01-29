@@ -78,7 +78,7 @@ const About = () => {
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             />
             <motion.div
-              className="absolute -bottom-8 -right-8 w-12 h-12 bg-blue-400 rounded-full opacity-20"
+              className="absolute -bottom-8 -right-5 w-12 h-12 bg-blue-400 rounded-full opacity-20"
               animate={{ y: [10, -10, 10] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             />

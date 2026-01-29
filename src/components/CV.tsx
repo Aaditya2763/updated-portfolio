@@ -176,7 +176,7 @@ const CV = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">Technical Skills</h4>
-              <div className="grid grid-cols-2 gap-3 mt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
                 {techSkills.map((skill, i) => (
                   <div key={i} className="p-3 rounded-lg border border-gray-200 dark:border-gray-600 text-sm font-medium text-gray-800 dark:text-gray-100 bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-900/10 dark:to-indigo-900/10 flex items-center justify-between">
                     <span>{skill.name}</span>
@@ -195,7 +195,7 @@ const CV = () => {
 
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-purple-600 dark:text-purple-400">Personal Skills & Languages</h4>
-              <div className="grid grid-cols-2 gap-3 mt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
                 {personalSkills.map((skill, i) => (
                   <div key={i} className="p-3 rounded-lg border border-gray-200 dark:border-gray-600 text-sm font-medium text-gray-800 dark:text-gray-100 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/10 dark:to-blue-900/10 flex items-center justify-between">
                     <span>{skill.name}</span>
