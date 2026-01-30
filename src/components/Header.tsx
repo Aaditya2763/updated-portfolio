@@ -69,7 +69,7 @@ const Header = ({
             className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
           >
-            AdityaSingh
+            Aditya Singh
           </motion.div>
 
           {/* Desktop Navigation */}
