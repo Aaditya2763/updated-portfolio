@@ -20,7 +20,7 @@ const testimonials = [
     role: "Senior Software Engineer",
     company: "Alphaway Global Pvt. Limited",
     image: "https://site-images.ams3.cdn.digitaloceanspaces.com/images/bg-images/employee-images/teamimg.png",
-    content: "Aditya is one of our most dedicated students. His practical approach to learning and consistent effort in projects sets him apart from his peers.",
+    content: "Aditya is one of our most dedicated employee. His practical approach to learning and consistent effort in projects sets him apart from his peers.",
     rating: 5
   },
   {

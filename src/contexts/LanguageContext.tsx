@@ -83,7 +83,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // About Section
     'about.title': 'About Me',
-    'about.subtitle': 'A dedicated student on a journey to become a skilled software developer',
+    'about.subtitle': 'A dedicated software developer with hands-on industry experience and a passion for continuous learning.',
     'about.description1': 'I am a Software Developer with 2.5+ years of professional experience specializing in Full Stack (MERN) and modern JavaScript frameworks.',
     'about.description2': 'I have hands-on experience in building scalable web and mobile applications, integrating secure authentication, payment gateways, and RESTful APIs.',
     'about.description3': 'I enjoy solving real-world problems, optimizing performance, and delivering production-ready solutions while collaborating effectively with cross-functional teams.I am currently pursuing my MCA and continuously upskilling in modern web technologies and AI-driven solutions.',
